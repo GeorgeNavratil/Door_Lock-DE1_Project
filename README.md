@@ -23,7 +23,7 @@ Making a Door Lock system with:
 
 Whole system will be mainly run on an [Arty A7-35T board](https://store.digilentinc.com/arty-a7-artix-7-fpga-development-board/) with a custom number keypad keyboard, a 4-digit display and a relay to automatically lock the door.
 
--<!-- Start of a comment
+<!-- Start of a comment
 
 ## VHDL modules description and simulations
 
