@@ -21,13 +21,13 @@ Making a Door Lock system with:
 
 ## Hardware description
 
-Whole system will be mainly run on an [Arty A7-35T board](https://store.digilentinc.com/arty-a7-artix-7-fpga-development-board/) with a custom number keypad keyboard, a 4-digit display and a relay to lock the door. The keyboard and display with relay are solved at two other external boards. On the board with display and relay are two LED diodes to signal if the lock is open or not and two terminal blocks, one for the lock and the second one for the external source which is there in case we would need more current to open a bigger lock (safe or something like that). This board can be connected directly into pmod ports on Arty A7. The keyboard will be connected into the Arduino/chipKIT shield connectors IO0-IO6. 
+Whole system will be mainly run on an [Arty A7-35T board](https://store.digilentinc.com/arty-a7-artix-7-fpga-development-board/) with a custom number keypad keyboard, a 4-digit display and a relay to lock the door. The keyboard and display with relay are solved at two other external boards. On the board with display and relay are two LED diodes to signal if the lock is open or not and two terminal blocks, one for the lock and the second one for the external source which is there in case we would need more current to open a bigger lock (safe or something like that). This board can be connected directly into pmod ports on Arty A7. The keyboard will be connected into the Arduino/chipKIT shield connectors IO0-IO11. 
 
-### Keyboard
+#### Keyboard
 
 ![Keyboard](Images/Keyboard.png)
 
-### Display
+#### Display
 
 ![Display](Images/Display.png)
 
@@ -35,7 +35,7 @@ Whole system will be mainly run on an [Arty A7-35T board](https://store.digilent
 
 ### Keyboard
 
-**Modul**: This module cares about the function of the keyboard. The keyboard itself is connected through seven signals where three of them go from the block to the columns of the keyboard and the other four are going back to the block from the rows. There is one 4bit vector output which gets the result of the row and column combination values. 
+**Modul**: The keypad is solved in the simplest way. Buttons are connected to 3,3V  power supply and every single button is connected to Arduino/chipKIT shield connectors IO0-IO11. Modul itself just recognizes which port is the supply. Then it sends the value assigned to the port where the just the supply is.
 
 **Simulation**: 
 
@@ -49,13 +49,23 @@ Whole system will be mainly run on an [Arty A7-35T board](https://store.digilent
 
 ![Comparator simulation waveforms](Images/ComparatorSim.png)
 
-### driver_7seg_4digit
+### D_7seg
 
-**Modul**: This module is a combination of three blocks taken from assignments (clock_enable, cnt_up_down, hex_7seg) which include the process p_mux. Its function is to take input values from the control block and display them on four seven segment displays on the external desk. The value from data0 input is shown on the first display and it stays there for 4ms then the process p_mux switches to the next input, takes the value from data1 and shows it on the second display. Same goes for the data2 and data3. The time of switching between displays is adjustable in the generic map of clock_enable in this module.
+**Modul**: This modul just takes the input values and transforms them into 7-bit values which can be shown on the display. Switching between displays is ensured by clk modul which with 1 kHz frequency switching between every single display every 1 ms.
 
 **Simulation**: 
 
-![Display simulation waveforms](Images/DisplaySim.png)
+![Display simulation waveforms](Images/DisplaySim1.png)
+
+![Display simulation waveforms](Images/DisplaySim2.png)
+
+### clk
+
+**Modul**: The boards initial 100 MHz signal would be a bit overkill for the CPU. That’s why we reduce it to just 1 kHz or 1 ms intervals with this module.
+
+**Simulation**: 
+
+![clk simulation waveforms](Images/clkSim.png)
 
 
 ## TOP module description and simulations
@@ -83,7 +93,13 @@ Whole system will be mainly run on an [Arty A7-35T board](https://store.digilent
 
 ![Top module diagram](Images/Top-Door_Lock.png)
 
+**Modul**: 
 
+**Simulation**: 
+
+![Top simulation waveforms](Images/TopSim1.png)
+
+![Top simulation waveforms](Images/TopSim2.png)
 
 <!-- Start of a comment
 
@@ -92,6 +108,7 @@ Whole system will be mainly run on an [Arty A7-35T board](https://store.digilent
 [![Door Lock - DE1 Project](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
 
 End of a comment -->
+
 
 ## References
 
