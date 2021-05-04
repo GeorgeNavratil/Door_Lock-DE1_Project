@@ -1,0 +1,262 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Tue May  4 17:40:08 2021
+| Host         : DESKTOP-GOISDGD running 64-bit major release  (build 9200)
+| Command      : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
+| Design       : top
+| Device       : xc7a35ticsg324-1L
+| Speed File   : -1L
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 45
++-----------+------------------+-----------------------------+------------+
+| Rule      | Severity         | Description                 | Violations |
++-----------+------------------+-----------------------------+------------+
+| TIMING-17 | Critical Warning | Non-clocked sequential cell | 11         |
+| TIMING-20 | Warning          | Non-clocked latch           | 18         |
+| TIMING-23 | Warning          | Combinational loop found    | 16         |
++-----------+------------------+-----------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-17#1 Critical Warning
+Non-clocked sequential cell  
+The clock pin comparator/data1_o_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Critical Warning
+Non-clocked sequential cell  
+The clock pin comparator/data1_o_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Critical Warning
+Non-clocked sequential cell  
+The clock pin comparator/data1_o_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Critical Warning
+Non-clocked sequential cell  
+The clock pin comparator/data1_o_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Critical Warning
+Non-clocked sequential cell  
+The clock pin comparator/data2_o_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Critical Warning
+Non-clocked sequential cell  
+The clock pin comparator/data2_o_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Critical Warning
+Non-clocked sequential cell  
+The clock pin comparator/data2_o_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Critical Warning
+Non-clocked sequential cell  
+The clock pin comparator/data2_o_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Critical Warning
+Non-clocked sequential cell  
+The clock pin comparator/led_red_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#10 Critical Warning
+Non-clocked sequential cell  
+The clock pin comparator/relay_o_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#11 Critical Warning
+Non-clocked sequential cell  
+The clock pin comparator/relay_o_reg_lopt_replica/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch clk/clk_o_reg cannot be properly analyzed as its control pin clk/clk_o_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch comparator/Rel_startup_reg cannot be properly analyzed as its control pin comparator/Rel_startup_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch comparator/input_digit0_reg[0] cannot be properly analyzed as its control pin comparator/input_digit0_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch comparator/input_digit0_reg[1] cannot be properly analyzed as its control pin comparator/input_digit0_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch comparator/input_digit0_reg[2] cannot be properly analyzed as its control pin comparator/input_digit0_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch comparator/input_digit0_reg[3] cannot be properly analyzed as its control pin comparator/input_digit0_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch comparator/input_digit1_reg[0] cannot be properly analyzed as its control pin comparator/input_digit1_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch comparator/input_digit1_reg[1] cannot be properly analyzed as its control pin comparator/input_digit1_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch comparator/input_digit1_reg[2] cannot be properly analyzed as its control pin comparator/input_digit1_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch comparator/input_digit1_reg[3] cannot be properly analyzed as its control pin comparator/input_digit1_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch comparator/input_digit2_reg[0] cannot be properly analyzed as its control pin comparator/input_digit2_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch comparator/input_digit2_reg[1] cannot be properly analyzed as its control pin comparator/input_digit2_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch comparator/input_digit2_reg[2] cannot be properly analyzed as its control pin comparator/input_digit2_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch comparator/input_digit2_reg[3] cannot be properly analyzed as its control pin comparator/input_digit2_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch comparator/input_digit3_reg[0] cannot be properly analyzed as its control pin comparator/input_digit3_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch comparator/input_digit3_reg[1] cannot be properly analyzed as its control pin comparator/input_digit3_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch comparator/input_digit3_reg[2] cannot be properly analyzed as its control pin comparator/input_digit3_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch comparator/input_digit3_reg[3] cannot be properly analyzed as its control pin comparator/input_digit3_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-23#1 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between Seven_seg_OBUF[1]_inst_i_3/I1 and Seven_seg_OBUF[1]_inst_i_3/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#2 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between clk/clk_o_reg_i_2/I0 and clk/clk_o_reg_i_2/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#3 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between clk/f_reduction0_carry/S[0] and clk/f_reduction0_carry/O[0] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#4 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between clk/f_reduction0_carry/S[1] and clk/f_reduction0_carry/O[1] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#5 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between clk/f_reduction0_carry/S[2] and clk/f_reduction0_carry/O[2] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#6 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between clk/f_reduction0_carry__0/S[0] and clk/f_reduction0_carry__0/O[0] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#7 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between clk/f_reduction0_carry__0/S[1] and clk/f_reduction0_carry__0/O[1] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#8 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between clk/f_reduction0_carry__0/S[2] and clk/f_reduction0_carry__0/O[2] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#9 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between clk/f_reduction0_carry__1/S[0] and clk/f_reduction0_carry__1/O[0] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#10 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between clk/f_reduction0_carry__1/S[1] and clk/f_reduction0_carry__1/O[1] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#11 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between clk/f_reduction0_carry__1/S[2] and clk/f_reduction0_carry__1/O[2] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#12 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between clk/f_reduction0_carry__1/S[3] and clk/f_reduction0_carry__1/O[3] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#13 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between clk/f_reduction0_carry__2/S[0] and clk/f_reduction0_carry__2/O[0] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#14 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between clk/f_reduction0_carry__2/S[1] and clk/f_reduction0_carry__2/O[1] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#15 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between clk/f_reduction0_carry__2/S[2] and clk/f_reduction0_carry__2/O[2] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#16 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between clk/f_reduction0_carry__2/S[3] and clk/f_reduction0_carry__2/O[3] to disable the timing loop
+Related violations: <none>
+
+

@@ -1,0 +1,14 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Users/filip/OneDrive/Plocha/Lab_12/project_123/project_1.srcs/sim_1/new/tb_D_7seg.vhd,1620136739,vhdl,,,,tb_d_7seg,,,,,,,,
+C:/Users/filip/OneDrive/Plocha/Lab_12/project_123/project_1.srcs/sim_1/new/tb_clk.vhd,1620127516,vhdl,,,,tb_clk,,,,,,,,
+C:/Users/filip/OneDrive/Plocha/Lab_12/project_123/project_1.srcs/sim_1/new/tb_comparator.vhd,1620137156,vhdl,,,,tb_comparator,,,,,,,,
+C:/Users/filip/OneDrive/Plocha/Lab_12/project_123/project_1.srcs/sim_1/new/tb_keyboard.vhd,1620136499,vhdl,,,,tb_keyboard,,,,,,,,
+C:/Users/filip/OneDrive/Plocha/Lab_12/project_123/project_1.srcs/sim_1/new/tb_top.vhd,1620129758,vhdl,,,,tb_top,,,,,,,,
+C:/Users/filip/OneDrive/Plocha/Lab_12/project_123/project_1.srcs/sources_1/new/D_7seg.vhd,1620136211,vhdl,C:/Users/filip/OneDrive/Plocha/Lab_12/project_123/project_1.srcs/sources_1/new/top.vhd,,,d_7seg,,,,,,,,
+C:/Users/filip/OneDrive/Plocha/Lab_12/project_123/project_1.srcs/sources_1/new/clk.vhd,1620128988,vhdl,C:/Users/filip/OneDrive/Plocha/Lab_12/project_123/project_1.srcs/sources_1/new/top.vhd,,,clk,,,,,,,,
+C:/Users/filip/OneDrive/Plocha/Lab_12/project_123/project_1.srcs/sources_1/new/comparator.vhd,1620142215,vhdl,C:/Users/filip/OneDrive/Plocha/Lab_12/project_123/project_1.srcs/sources_1/new/top.vhd,,,comparator,,,,,,,,
+C:/Users/filip/OneDrive/Plocha/Lab_12/project_123/project_1.srcs/sources_1/new/keyboard.vhd,1620072676,vhdl,C:/Users/filip/OneDrive/Plocha/Lab_12/project_123/project_1.srcs/sources_1/new/top.vhd,,,keyboard,,,,,,,,
+C:/Users/filip/OneDrive/Plocha/Lab_12/project_123/project_1.srcs/sources_1/new/top.vhd,1620133023,vhdl,C:/Users/filip/OneDrive/Plocha/Lab_12/project_123/project_1.srcs/sim_1/new/tb_top.vhd,,,top,,,,,,,,
