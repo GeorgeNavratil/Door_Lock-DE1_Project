@@ -35,7 +35,7 @@ Whole system will be mainly run on an [Arty A7-35T board](https://store.digilent
 
 ### Keyboard
 
-**Modul**: The keyboard is solved in the simplest way. Buttons are connected to 3,3V  power supply and every single button is connected to Arduino/chipKIT shield connectors IO0-IO11. The module recognizes, in which port is the voltage. Then it sends the value assigned to the port where the just the supply is.
+**Module**: The keyboard is solved in the simplest way. Buttons are connected to 3,3V  power supply and every single button is connected to Arduino/chipKIT shield connectors IO0-IO11. The module recognizes, in which port is the voltage. Then it sends the value assigned to the port where the just the supply is.
 
 **Simulation**: In this simulation we can see that after pressing some key then in output is the value of the pressed key at this moment. 
 
@@ -43,7 +43,7 @@ Whole system will be mainly run on an [Arty A7-35T board](https://store.digilent
 
 ### Comparator
 
-**Modul**: The comparator accountable for showing information that is presented, meaning displaying the currently assigned PIN code, lighting a corresponding LED if the door is locked or unlocked and sending a signal to the door relay to unlock it. It’s important role is also to reset the code if the combination was incorrectly entered or when it was correct and will need to be put in the next time. Another thing is the ‘*’ key, which deletes the last number that was put in.
+**Module**: The comparator accountable for showing information that is presented, meaning displaying the currently assigned PIN code, lighting a corresponding LED if the door is locked or unlocked and sending a signal to the door relay to unlock it. It’s important role is also to reset the code if the combination was incorrectly entered or when it was correct and will need to be put in the next time. Another thing is the ‘*’ key, which deletes the last number that was put in.
 
 **Simulation**: Signals s_digit includes outcoming values into comparator. There are numbers one two three and at fourth position is as first number five then is pressed star, number five is deleted and then is written number four (the right number). After the password is entered we press a cross, each number of the display is deleted, red LED light off, green LED light on and lock is open. With the next press a cross is the lock closed. In the end of the simulation we can see the situation when we enter the wrong password and the lock does not open. 
 
@@ -51,7 +51,7 @@ Whole system will be mainly run on an [Arty A7-35T board](https://store.digilent
 
 ### D_7seg
 
-**Modul**: This modul just takes the input values and transforms them into 7-bit values which can be shown on the display. Switching between displays is ensured by clk modul which with 1 kHz frequency switching between every single display every 1 ns.
+**Module**: This modul just takes the input values and transforms them into 7-bit values which can be shown on the display. Switching between displays is ensured by clk modul which with 1 kHz frequency switching between every single display every 1 ns.
 
 **Simulation**: In inputs s_data are values which were entered on the keyboard. In outputs, values for certain numbers to show on display are switching every 1 ns. 
 
@@ -61,7 +61,7 @@ Whole system will be mainly run on an [Arty A7-35T board](https://store.digilent
 
 ### clk
 
-**Modul**: The boards initial 100 MHz signal would be a bit overkill for the CPU. That’s why we reduce it to just 1 kHz or 1 ms intervals with this module.
+**Module**: The boards initial 100 MHz signal would be a bit overkill for the CPU. That’s why we reduce it to just 1 kHz or 1 ms intervals with this module.
 
 **Simulation**: Here we can see that the output clock has a lower frequency.
 
@@ -109,7 +109,7 @@ Whole system will be mainly run on an [Arty A7-35T board](https://store.digilent
 
 ![Top module Vivado schematic](Images/VivadoSchematic.png)
 
-**Modul**: This program consists of 4 modules. The first one being the initial *keyboard* input to which signals from its keys are conducted. After a button is pressed a signal containing a corresponding number in a binary form and is sent to the key_o output. The number ‘0’ is represented as “1111”, the ‘*’ key as “1010” and ‘#’ is “1011”. Next comes the *comparator* that is partly controlled by a *clk* signal which is transposed from being 100 MHz to just 1 kHz. Input values that are entered are stored in the comparator and after the ‘#’ key is pressed it evaluates if the code entered agrees with the set code. The module has a realy_o output that has a value of 1 when the code is correct and therefore unlocks the door. The two LEDs, one red that shines if the door is locked and a green one working the other way around. The outputs from the comparator are also data of entered values which are then sent to the driver for 7-segment displays and are presented after the matter.
+**Module**: This program consists of 4 modules. The first one being the initial *keyboard* input to which signals from its keys are conducted. After a button is pressed a signal containing a corresponding number in a binary form and is sent to the key_o output. The number ‘0’ is represented as “1111”, the ‘*’ key as “1010” and ‘#’ is “1011”. Next comes the *comparator* that is partly controlled by a *clk* signal which is transposed from being 100 MHz to just 1 kHz. Input values that are entered are stored in the comparator and after the ‘#’ key is pressed it evaluates if the code entered agrees with the set code. The module has a realy_o output that has a value of 1 when the code is correct and therefore unlocks the door. The two LEDs, one red that shines if the door is locked and a green one working the other way around. The outputs from the comparator are also data of entered values which are then sent to the driver for 7-segment displays and are presented after the matter.
 
 **Simulation**: We simulate enter of the numbers 1, 2 and 3, after which we add a 5 that is then deleted with ‘*’ key (s_keyDel in code) and number 4 is pressed instead. The ‘#’ key confirms our input, switches on the relay to unlock the door and changes the LED color. After that we click the ‘#’ key once more to switch the relay off and return the original LED color back. The other instances are to demonstrate a wrongly inserted code when the relay and LEDs don’t react.
 
