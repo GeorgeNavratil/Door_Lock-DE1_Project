@@ -117,16 +117,12 @@ Whole system will be mainly run on an [Arty A7-35T board](https://store.digilent
 
 ![Top simulation waveforms](Images/TopSim2.png)
 
-<!-- Start of a comment
 ## Video
 
-[![Door Lock - DE1 Project](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
-
-End of a comment -->
-
+[YouTube video for Door Lock - DE1 Project](https://youtu.be/IV2hTCzT9uw)
 
 ## References
 
 - Arty A7 Reference Manual [online]. Available from: https://reference.digilentinc.com/reference/programmable-logic/arty-a7/reference-manual
-- 4X3 KEYPAD OPERATING MECHANISM » PIJA Education. WHAT IS ARDUINO? & Arduino Boards » PIJA Education [online]. Available from: https://pijaeducation.com/arduino/keypad/4x3-keypad-operating-mechanism/
-- How to interface 4x3 (Alphanumeric) keypad with Arduino uno : Arduino Alphanumeric keypad programming. Electronic Projects, Electrical Engineering Resources and Makers Articles [online]. Copyright © 2021 WTWH Media LLC. All Rights Reserved. The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used, except with the prior written permission of WTWH Media. Available from: https://www.engineersgarage.com/arduino/alphanumeric-keypad-with-arduino/
+- https://www.gme.cz/led-display-14-2mm-hdsp-h101
+- https://www.ics.uci.edu/~jmoorkan/vhdlref/
